@@ -86,6 +86,7 @@ header{
 .container{
   width: 1024px;
   display: flex;
+  height: 100%;
 }
 .header{
   display: flex;
@@ -123,6 +124,15 @@ header{
 }
 .reduced-nav{
   display: none;
+  width: 100%;
+  height: 100%;
+}
+.reduced-nav span{
+  margin: auto;
+}
+.reduced-nav img{
+  height: 40px;
+  width: auto;
 }
 .section{
   display: flex;
@@ -199,6 +209,9 @@ header{
 .image-content img{
   width: 100%;
 }
+.mobile{
+  display: none;
+}
 .news-bit .text-content{
   width: 65%;
 }
@@ -230,6 +243,11 @@ header{
   justify-content: center;
   margin-bottom: 32px;
 }
+.course-menu .mobile{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 .course{
   display: flex;
   flex-direction: column;
@@ -241,6 +259,11 @@ header{
   background-color: rgb(255, 255, 255);
   height: 100%;
   justify-content: normal;
+}
+.course-button{
+  background-color: rgb(220, 220, 220);
+  padding: 16px 0 24px 16px;
+  width: 80%;
 }
 .exhibit .container{
   flex-direction: column;
@@ -262,4 +285,69 @@ footer{
 }
 .copyright{
   margin-right: auto;
+}
+@media only screen and (max-width:730px){
+  html{
+    font-size: 14px;
+  }
+  .logo{
+    display: none;
+  }
+  .full-nav{
+    display: none;
+  }
+  .reduced-nav{
+    display: flex;
+    align-items: center;
+  }
+  .reduced-nav span:hover{
+    background-color: rgb(220, 220, 220);
+  }
+  .banner .container{
+    flex-direction: column;
+  }
+  .banner .highlight{
+    width: 100%;
+    margin: 0;
+  }
+  .banner .text-content{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .news .highlight{
+    display: none;
+  }
+  .news-menu{
+    width: 100%;
+  }
+  .news-bit{
+    flex-direction: column;
+  }
+  .standard{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .news-bit .image-content{
+    width: auto;
+  }
+  .news-bit .text-content{
+    margin-bottom: 32px;
+  }
+  .learning .container{
+    background-color: rgb(255, 255, 255);
+  }
+
+  .exhibit .news-menu{
+    display: none;
+  }
+  .exhibit .highlight{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .exhibit .text-content{
+    display: none;
+  }
 }
