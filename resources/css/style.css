@@ -63,6 +63,11 @@ h1{
 }
 h3{
   font-size: 1.2rem;
+  font-weight: bold;
+}
+p{
+  font-size: .875rem;
+  padding-top: 8px;
 }
 header{
   display: flex;
@@ -74,6 +79,9 @@ header{
   width: 100%;
   z-index: 1;
   background-color: rgb(255, 255, 255);
+}
+.uppercase{
+  text-transform: uppercase;
 }
 .container{
   width: 1024px;
@@ -119,10 +127,17 @@ header{
 .reduced-nav{
   display: none;
 }
-.banner{
+.section{
   display: flex;
-  margin-top: 64px;
   justify-content: center;
+}
+.text-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner{
+  margin-top: 64px;
 }
 .banner .container{
   background-color: rgb(220, 220, 220);
@@ -138,15 +153,14 @@ header{
   width: 100%;
 }
 .banner .text-content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   width: 40%;
   margin: auto;
 }
 .banner h1{
   font-size: 3rem;
+}
+.banner h3{
+  font-weight: normal;
 }
 .start-button{
   width: 70%;
@@ -161,15 +175,11 @@ header{
   background-color: rgb(255, 255, 255);
   transition: all 400ms ease;
 }
-.news{
+.section{
   display: flex;
   justify-content: center;
 }
 .highlight .text-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
   margin-bottom: 32px;
 }
 .quoted{
@@ -181,9 +191,6 @@ header{
   display: flex;
   flex-direction: column;
   width: 40%;
-}
-.news-menu h3{
-  font-weight: bold;
 }
 .news-bit{
   display: flex;
@@ -201,19 +208,43 @@ header{
 .news-bit .text-content{
   width: 65%;
 }
-.news-bit p{
-  font-size: .875rem;
-  padding-top: 8px;
-}
 .news-bit a{
   color: rgb(0, 180, 255);
 }
 .news-bit:hover{
   background-color: rgb(220, 220, 220);
   transition: all 400ms ease;
-
 }
 .news-bit a:hover{
   font-weight: bold;
   transition: all 400ms ease;
+}
+.learning .container{
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(220, 220, 220);
+}
+.title h1{
+  font-family: "Pacifico", cursive;
+  margin-bottom: 32px;
+  padding: 0;
+}
+.course-menu{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 56px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.course{
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  padding: 16px;
+}
+.course .text-content{
+  padding: 16px 16px 24px 16px;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  justify-content: normal;
 }
