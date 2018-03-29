@@ -179,9 +179,6 @@ header{
   display: flex;
   justify-content: center;
 }
-.highlight .text-content{
-  margin-bottom: 32px;
-}
 .quoted{
   font-size: .875rem;
   font-style:italic;
@@ -247,4 +244,11 @@ header{
   background-color: rgb(255, 255, 255);
   height: 100%;
   justify-content: normal;
+}
+.exhibit .container{
+  flex-direction: column;
+  align-items: center;
+}
+.content-organizer{
+  display: flex;
 }
